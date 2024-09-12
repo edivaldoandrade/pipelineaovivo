@@ -15,8 +15,9 @@ class Vendas(BaseModel):
     data: datetime
     valor: PositiveFloat
     quantidade: PositiveInt
-    produto: ProdutoEnum
+    produto: str
 
+    @validate_call('produto')
 
 
 

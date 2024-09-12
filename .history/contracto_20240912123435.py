@@ -16,7 +16,11 @@ class Vendas(BaseModel):
     valor: PositiveFloat
     quantidade: PositiveInt
     produto: ProdutoEnum
+    
 
+    @validate_call('produto')
+    def categoria_no_enum(cls, v):
+        return v
 
 
 
