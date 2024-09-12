@@ -1,3 +1,6 @@
 # Folders
 .venv
+.history
+
+# Files
 .env
